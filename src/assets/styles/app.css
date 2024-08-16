@@ -1,14 +1,14 @@
-.App {
+.main {
   text-align: center;
 }
 
-.App-header {
+.header {
   background-color: #282c34;
   padding: 20px;
   color: white;
 }
 
-.App-footer {
+.footer {
   background-color: #282c34;
   padding: 10px;
   color: white;

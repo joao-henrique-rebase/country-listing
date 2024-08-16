@@ -19,7 +19,7 @@ const CountryList = () => {
   })
 
   return (
-    <div>
+    <main>
       <CountryFilter
         nameFilter={nameFilter}
         setNameFilter={setNameFilter}
@@ -41,7 +41,7 @@ const CountryList = () => {
           ))}
         </tbody>
       </table>
-    </div>
+    </main>
   )
 }
 
