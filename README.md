@@ -3,7 +3,7 @@
 # Projeto Paises da Globo
 
 O objetivo deste projeto é ensinar conceitos básicos de React, introduzir GraphQL com Apollo Client e implementar filtros no lado do cliente utilizando Hooks e variaves de estado. 
-Através deste projeto, você aprenderá a configurar um projeto React, consumir uma API GraphQL, renderizar dados em uma tabela e criar funcionalidades de filtro.
+Através deste projeto, você aprenderá a configurar um projeto React, consumir uma API GraphQL, renderizar dados em uma lista e criar funcionalidades de filtro.
 
 ## Parte 1: Configuração Inicial
 
