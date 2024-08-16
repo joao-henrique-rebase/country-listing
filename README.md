@@ -1,5 +1,3 @@
-Seu README.md está bem escrito, mas há alguns erros ortográficos e de digitação. Vou listar as correções necessárias:
-
 ### README.md
 
 # Projeto Países do Globo
