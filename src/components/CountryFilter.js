@@ -5,6 +5,9 @@ const CountryFilter = ({
   setNameFilter,
   capitalFilter,
   setCapitalFilter,
+  languageFilter,
+  setLanguageFilter,
+  languages,
 }) => (
   <div>
     <input
@@ -21,6 +24,18 @@ const CountryFilter = ({
       value={capitalFilter}
       onChange={(e) => setCapitalFilter(e.target.value)}
     />
+    <select
+      name="languages"
+      value={languageFilter}
+      onChange={(e) => setLanguageFilter(e.target.value)}
+    >
+      <option value="">Filtrar por idioma</option>
+      {languages.map((language) => (
+        <option key={language} value={language}>
+          {language}
+        </option>
+      ))}
+    </select>
   </div>
 )
 

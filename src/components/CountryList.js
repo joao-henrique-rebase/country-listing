@@ -7,16 +7,32 @@ const CountryList = () => {
   const { loading, error, data } = useQuery(GET_COUNTRIES)
   const [nameFilter, setNameFilter] = useState('')
   const [capitalFilter, setCapitalFilter] = useState('')
+  const [languageFilter, setLanguageFilter] = useState('')
 
   if (loading) return <p>Carregando lista...</p>
   if (error) return <p>Poxa, Erro :(</p>
 
-  const filteredCountries = data.countries.filter((country) => {
-    return (
-      country.name?.toLowerCase().includes(nameFilter.toLowerCase()) &&
-      country.capital?.toLowerCase().includes(capitalFilter.toLowerCase())
+  const uniqueLanguages = Array.from(
+    new Set(
+      data.countries.flatMap((country) =>
+        country.languages.map((lang) => lang.name)
+      )
     )
-  })
+  ).sort()
+
+  const filteredCountries = data.countries.filter(
+    ({ name, capital, languages }) => {
+      const matchesName = name.toLowerCase().includes(nameFilter.toLowerCase())
+      const matchesCapital = capital
+        ?.toLowerCase()
+        .includes(capitalFilter.toLowerCase())
+      const matchesLanguage =
+        !languageFilter ||
+        languages.some((lang) => lang.name === languageFilter)
+
+      return matchesName && matchesCapital && matchesLanguage
+    }
+  )
 
   return (
     <main>
@@ -25,6 +41,9 @@ const CountryList = () => {
         setNameFilter={setNameFilter}
         capitalFilter={capitalFilter}
         setCapitalFilter={setCapitalFilter}
+        languageFilter={languageFilter}
+        setLanguageFilter={setLanguageFilter}
+        languages={uniqueLanguages}
       />
       <table>
         <thead>
