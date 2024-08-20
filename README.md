@@ -93,4 +93,4 @@ npm install cypress --save-dev
 1. Melhore a interface visual adicionando um cabeçalho com o título da aplicação e uma breve descrição, podendo ser componentes.
 2. Adicione um rodapé com informações adicionais, como o seu nome, a data de criação do projeto ou links para as redes sociais ou GitHub.
 
-![Interface do projeto](print.png)
+![Interface do projeto](printsc.png)
