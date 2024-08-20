@@ -36,11 +36,11 @@ URL: https://countries.trevorblades.com/graphql
 ```graphql
 query {
   countries {
-    name
     emoji
+    name
     capital
     languages {
-      
+      name
     }
   }
 }
@@ -58,7 +58,7 @@ query {
 2. Utilize o hook `useState` para armazenar o valor do filtro.
 3. Filtre a lista de países exibida na tabela com base no valor digitado nos campos de input.
 
-## Parte 4: Adicionar Tests em Cypress
+## Parte 4: Adicionar Testes em Cypress
 
 ### Desafio 1: Configuração e Testes Básicos
 1. Instale o Cypress no projeto utilizando npm ou yarn:
@@ -77,13 +77,13 @@ npm install cypress --save-dev
 ## Parte 5: Melhorias e Refatoração - Bônus
 
 ### Desafio 1: Refatoração do Código
-1. Separe o componente `CountryList` em componentes menores; por exemplo, crie um componente separado para o filtro `CountryFilter` e um para a linha da listagem `CountryRow`.
+1. Separe o componente `CountryList` em componentes menores, por exemplo, crie um componente separado para o filtro `CountryFilter` e um para a linha da listagem `CountryRow`.
 
 ### Desafio 2: Padronização do Projeto
 1. Extraia todos os componentes criados para uma pasta `Components` e um arquivo `index` na raiz da pasta que exporta todos os componentes criados facilitando a importação dos mesmos.
 2. Crie uma pasta de `queries` para extrair a constante da query utilizada.
 3. Componentes como `App` e `ApolloProvider` podem estar em uma pasta `main`.
-4. Folhas de estilo podem estar dentro de uma pasta `assets`/`styles`; dentro de `assets`, podemos colocar outras melhorias como imagens e fontes, por exemplo.
+4. Folhas de estilo podem estar dentro de uma pasta `assets`/`styles`, dentro de `assets`, podemos colocar outras melhorias como imagens e fontes, por exemplo.
 
 ### Desafio 3: Melhoria na Interface de Usuário
 1. Melhore a interface visual adicionando um cabeçalho com o título da aplicação e uma breve descrição, podendo ser componentes.
