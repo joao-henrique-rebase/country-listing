@@ -8,20 +8,20 @@ O objetivo deste projeto é ensinar conceitos básicos de React, introduzir Grap
 
 ### Desafio 1: Configuração do Ambiente de Desenvolvimento
 1. Instale o Node.js e npm (ou Yarn) na sua máquina.
-2. Crie uma nova aplicação React utilizando o `create-react-app`.
+2. Crie uma nova aplicação React utilizando o `create-react-app`, `vitejs` ou `nextjs` por exemplo!.
 ```bash
 npx create-react-app countries-globe
 ```
-3. Execute a aplicação para garantir que tudo está funcionando.
+1. Execute a aplicação para garantir que tudo está funcionando.
 ```bash
 npm start
 ```
 
 ### Desafio 2: Instalação e Configuração do Apollo Client
 1. Instale a biblioteca Apollo Client e GraphQL.
-   ```bash
-   npm install @apollo/client graphql
-   ```
+```bash
+npm install @apollo/client graphql
+```
 2. Configure o Apollo Client no seu projeto criando `Provider`. Siga a documentação: https://www.apollographql.com/docs/react/get-started
 3. Envolva o componente principal com o `Provider` configurado.
 
